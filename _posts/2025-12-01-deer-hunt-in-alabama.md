@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deer Hunt in Alabama"
-date: 2025-12-02
+date: 2025-12-01
 categories: deer-hunts
 excerpt: "Patience is key."
 ---
