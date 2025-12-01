@@ -2,7 +2,7 @@
 layout: post
 title: "Top Gear for Hunters"
 date: 2025-12-01
-categories: gear-reviews
+categories: fishing
 excerpt: "Essential gear every hunter should have."
 ---
 
