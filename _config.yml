@@ -1,6 +1,7 @@
 
 title: "My Hunting Stories"
 description: "A collection of my hunting adventures"
-baseurl: "https://jae0029.github.io/Hunting/"
-url: "https://jae0029.github.io/Hunting/"
+baseurl: "" # Leave empty for GitHub Pages project site
+url: "https://jae0029.github.io/Hunting"
 theme: minima
+excerpt_separator: "<!--more-->"
