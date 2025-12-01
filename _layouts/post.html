@@ -4,7 +4,6 @@
   <p><em>{{ page.date | date: "%m-%d-%Y" }}</em></p>
 
   {% if page.image %}
-    <img
-      src="{{ '/assets/images/' | append: page.image | relative_url }}"
-      alt="{{ page.title }}"
+    <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}">
       style="max-width: 100%; height: auto;"
+  {% endif % }
