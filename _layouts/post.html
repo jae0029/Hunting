@@ -5,9 +5,11 @@
 </article>
   
   {% if page.image %}
+    <figure style="text-align: center;">
       <img
         src="{{ '/assets/images/' | append: page.image | relative_url }}"
         alt="{{ page.title }}"
         style="max-width: 80%; height: auto;"
       />
+    </figure>
   {% endif %}
