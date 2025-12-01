@@ -2,7 +2,7 @@
 ---
 layout: post
 title: "Deer Hunt in Alabama"
-date: 2025-12-05
+date: 12-05-2025
 categories: deer-hunts
 ---
 
