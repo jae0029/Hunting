@@ -7,7 +7,7 @@ title: "Home"
 <ul>
 {% for post in site.posts %}
   <li>
-    <a href="{{ post.url | post.title }}">{{ post.title }}</a>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <span> - {{ post.date | date: "%m-%d-%Y" }}</span>
     {% if post.excerpt %}
       <p>{{ post.excerpt }}</p>
