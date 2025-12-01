@@ -2,7 +2,7 @@
 
 ## Directory Structure
 ```
-my-hunting-blog/
+Hunting/
 ├── _config.yml
 ├── index.md
 ├── _posts/
