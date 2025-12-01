@@ -1,6 +1,6 @@
 title: "Hunting Stories"
 description: "A collection of hunting adventures and gear reviews"
-baseurl: "" # Leave empty for user.github.io/Hunting
-url: "https://yourusername.github.io"
+baseurl: "/Hunting" # Leave empty for user.github.io/Hunting
+url: "https://jae0029.github.io"
 theme: minima
 markdown: kramdown
