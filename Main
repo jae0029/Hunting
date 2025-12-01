@@ -1,0 +1,136 @@
+
+# Jekyll Hunting Blog Template
+
+## Directory Structure
+```
+my-hunting-blog/
+├── _config.yml
+├── index.md
+├── _posts/
+│   ├── 2025-12-01-first-hunt.md
+├── _layouts/
+│   ├── default.html
+│   ├── post.html
+├── _includes/
+│   ├── header.html
+│   ├── footer.html
+├── assets/
+│   ├── css/style.css
+```
+
+## _config.yml
+```yaml
+title: "My Hunting Stories"
+description: "A collection of my hunting adventures"
+baseurl: ""
+url: "https://yourusername.github.io"
+theme: minima
+```
+
+## index.md
+```markdown
+---
+layout: default
+title: "Home"
+---
+
+# Welcome to My Hunting Blog
+
+Here you'll find stories from my hunting adventures. Check out the latest posts below:
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      {{ post.url }}{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
+```
+
+## _layouts/default.html
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
+</html>
+```
+
+## _layouts/post.html
+```html
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  <p><em>{{ page.date | date: "%B %d, %Y" }}</em></p>
+  {{ content }}
+</article>
+```
+
+## _includes/header.html
+```html
+<header>
+  <h1><a href="/">{{ site.title }}</a></h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/deer-hunts">Deer Hunts</a>
+    <a href="/turkey-hunts">Turkey Hunts</a>
+    <a href="/gear-reviews">Gear Reviews</a>
+    <a href="/about">About</a>
+  </nav>
+</header>
+```
+
+## _includes/footer.html
+```html
+<footer>
+  <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+</footer>
+```
+
+## assets/css/style.css
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+header a, footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+nav {
+  margin-top: 10px;
+}
+main {
+  padding: 20px;
+}
+```
+
+## Sample Post (_posts/2025-12-01-first-hunt.md)
+```markdown
+---
+layout: post
+title: "My First Hunt"
+date: 2025-12-01
+---
+
+It was a crisp morning in Alabama. The woods were quiet except for the rustle of leaves...
+```
