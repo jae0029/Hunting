@@ -1,4 +1,4 @@
-```markdown
+
 ---
 layout: default
 title: "Home"
@@ -11,8 +11,6 @@ Here you'll find stories from my hunting adventures. Check out the latest posts 
 <ul>
   {% for post in site.posts %}
     <li>
-      {{ post.url }}{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
-    </li>
-  {% endfor %}
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+ {% endfor %}
 </ul>
-```
