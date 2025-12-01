@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: "Home"
@@ -11,7 +12,7 @@ Here you'll find stories from my hunting adventures. Check out the latest posts 
   {% assign posts_sorted = site.posts | sort: "date" | reverse %}
   {% for post in posts_sorted %}
     <li>
-      {{ post.url | relative_url }}{{ post.title }}</a>
+      <a href="{{ | relative_url }}{{ post.title }}</a>
       — <span>{{ post.date | date: "%B %d, %Y" }}</span>
       {% if post.excerpt %}
         <br><small>{{ post.excerpt | strip_html | truncate: 160 }}</small>
