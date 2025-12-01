@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: "Home"
@@ -14,3 +13,4 @@ Here you'll find stories from my hunting adventures. Check out the latest posts 
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
  {% endfor %}
 </ul>
+
