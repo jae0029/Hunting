@@ -2,11 +2,15 @@
 ---
 layout: post
 title: "Deer Hunt in Alabama"
-date: 12-05-2025
+date: 2025-12-01
 categories: deer-hunts
 ---
 
 It was a cold December morning in the Alabama woods. I set out before sunrise, the frost crunching under my boots. After an hour of waiting in the stand, I spotted a buck moving slowly through the tree line.
+
+<!--more-->
+
+(https://github.com/jae0029/Hunting/blob/main/assets/images/IMG_4749.jpeg)
 
 I steadied my rifle, took a deep breath, and made the shot count. The adrenaline rush was incredible! This hunt reminded me why patience is key in deer hunting.
 
@@ -14,7 +18,3 @@ I steadied my rifle, took a deep breath, and made the shot count. The adrenaline
 - Rifle: .308 Winchester
 - Optics: 3-9x40 scope
 - Clothing: Insulated camo jacket and pants
-
-![Deer Hunt](https://github.com/jae0029/Hunting/blob/main/assets/images/IMG_4749.jpeg)
-
-l share tips on tracking deer in dense woods. Stay tuned!
