@@ -2,9 +2,13 @@
 ---
 layout: post
 title: "Deer Hunt in Alabama"
-date: 2025-12-01
+date: 2025-12-02
 categories: deer-hunts
+image: deer.jpeg
+excerpt: "Patience is key."
 ---
+
+
 
 It was a cold December morning in the Alabama woods. I set out before sunrise, the frost crunching under my boots. After an hour of waiting in the stand, I spotted a buck moving slowly through the tree line.
 
