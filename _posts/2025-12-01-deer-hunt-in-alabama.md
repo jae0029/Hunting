@@ -10,7 +10,7 @@ It was a cold December morning in the Alabama woods. I set out before sunrise, t
 
 <!--more-->
 
-!DeerHunt(https://github.com/jae0029/Hunting/blob/main/assets/images/IMG_4749.jpeg)
+![Deer Hunt](https://github.com/jae0029/Hunting/blob/main/assets/images/IMG_4749.jpeg)
 
 I steadied my rifle, took a deep breath, and made the shot count. The adrenaline rush was incredible! This hunt reminded me why patience is key in deer hunting.
 
