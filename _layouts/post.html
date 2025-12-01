@@ -5,12 +5,10 @@
 </article>
   
   {% if page.image %}
-    <figure>
       <img
         src="{{ '/assets/images/' | append: page.image | relative_url }}"
         alt="{{ page.title }}"
         style="max-width: 100%; height: auto;"
         loading="lazy"
       />
-    </figure>
   {% endif %}
