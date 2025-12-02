@@ -174,7 +174,7 @@ body {
 }
 
 .post-featured-image img:hover {
-  transform: scale(1.02);        /* Optional subtle zoom on hover */
+  transform: scale(1.00);        /* Optional subtle zoom on hover */
 }
 
 .post-featured-image figcaption {
@@ -189,6 +189,24 @@ body {
   .post-featured-image img {
     width: 95%;
   }
+}
+
+/* ============================= */
+/*      HOME PAGE POST IMAGE     */
+/* ============================= */
+.home-post-image {
+  display: block;
+  width: 100%;       /* Full width of the home post container */
+  max-width: 300px;  /* Limit so images aren’t huge */
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.home-post-image:hover {
+  transform: scale(1.05);
 }
 
 /* ============================= */
