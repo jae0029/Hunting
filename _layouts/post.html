@@ -13,6 +13,15 @@ layout: default
 
   <div class="post-content">
     {{ content }}
+
+    <!-- Featured image at the end of the post -->
+    {% if page.featured_image %}
+      <figure>
+        <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}">
+        {% if page.image_caption %}
+          <figcaption>{{ page.image_caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
   </div>
 </article>
-
