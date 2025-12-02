@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Turkey Hunts
-category: turkey-hunts
 permalink: /categories/turkey-hunts/
 ---
 
