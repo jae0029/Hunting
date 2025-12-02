@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Deer Hunting Posts"
+title: "Deer Hunts"
 category: deer-hunts
 ---
 
-<h1>Deer Hunting Posts</h1>
+<h1>Deer Hunts</h1>
 
 <ul>
   {% for post in site.categories.deer-hunts %}
