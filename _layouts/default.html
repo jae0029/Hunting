@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>{{ page.title }} | {{ site.title }}</title>
 
   {% seo %}
 
-  <!-- Link your stylesheet; relative_url respects baseurl like /Hunting -->
+  <!-- Example stylesheet link -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">
-        {{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </h1>
 
       <nav class="site-nav">
-        {{ Home }} </a> 
-        {{ About }} </a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
       </nav>
     </div>
   </header>
@@ -33,5 +34,6 @@
       <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Powered by Jekyll.</p>
     </div>
   </footer>
+
 </body>
 </html>
