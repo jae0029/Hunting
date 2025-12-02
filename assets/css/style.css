@@ -88,12 +88,12 @@ body {
 
 /* Individual post item (home page) */
 .post-item {
-  flex: 0 1 400px;  /* default width */
+  flex: 0 1 600px;  /* default width */
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .post-item {
-    flex: 0 1 350px;  /* slightly smaller for medium screens */
+    flex: 0 1 400px;  /* slightly smaller for medium screens */
   }
 }
 
