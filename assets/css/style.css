@@ -151,7 +151,7 @@ body {
 /*        FEATURED IMAGE         */
 /* ============================= */
 .post-featured-image {
-  width: 20%;              /* Full width of container */
+  width: 50%;              /* Full width of container */
   max-height: 300px;        /* Optional: limit height */
   object-fit: cover;        /* Crop to fit nicely */
   margin-bottom: 0.75rem;   /* Space below image */
