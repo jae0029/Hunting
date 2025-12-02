@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Fishing Trips
-category: fishing
 permalink: /categories/fishing/
 ---
 
