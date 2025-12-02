@@ -2,7 +2,7 @@
 layout: post
 title: "Southern TNF"
 date: 2025-04-02
-categories: turkey_hunts
+categories: turkey-hunts
 excerpt: "I wanted to go a little more south in the National Forest"
 ---
 
