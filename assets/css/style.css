@@ -153,42 +153,19 @@ body {
 }
 
 /* ============================= */
-/*        FEATURED IMAGE         */
-/* ============================= */
-.featured-image {
-  width: 50%;              /* Full width of container */
-  max-height: 300px;        /* Optional: limit height */
-  object-fit: cover;        /* Crop to fit nicely */
-  margin-bottom: 0.5rem;   /* Space below image */
-  border-radius: 6px;       /* Optional: rounded corners */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Optional subtle shadow */
-  display: block;
-}
-
-.post-featured-image:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
-/* ============================= */
 /*      POST FEATURED IMAGE      */
 /* ============================= */
 .post-featured-image {
-  text-align: center;             /* Center figure content */
-  margin: 2rem auto 3rem;         /* Top 2rem, bottom 3rem */
-  display: block;
-  margin: 0 auto;                 /* Center horizontally */
-  width: 50%;                     /* 80% of the post container width */
-  max-width: 100%;                /* Never exceed container width */
-  height: auto;     
+  text-align: center;            /* Center figure content */
+  margin: 2rem auto 3rem;        /* Top 2rem, bottom 3rem */
 }
 
-.post-featured-image-img {
+.post-featured-image img {
   display: block;
-  margin: 0 auto;                 /* Center horizontally */
-  width: 50%;                     /* 80% of the post container width */
-  max-width: 100%;                /* Never exceed container width */
-  height: auto;                   /* Maintain aspect ratio */
+  margin: 0 auto;                /* Center horizontally */
+  width: 80%;                     /* 80% of post container width */
+  max-width: 100%;               /* Never exceed container */
+  height: auto;                  /* Maintain aspect ratio */
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 2.5px;
@@ -196,8 +173,8 @@ body {
   transition: transform 0.3s ease;
 }
 
-.post-featured-image-img:hover {
-  transform: scale(1.00);         /* Optional hover zoom effect */
+.post-featured-image img:hover {
+  transform: scale(1.02);        /* Optional subtle zoom on hover */
 }
 
 .post-featured-image figcaption {
@@ -207,9 +184,10 @@ body {
   font-size: 0.9rem;
 }
 
+/* Responsive: almost full width on small screens */
 @media screen and (max-width: 600px) {
-  .post-featured-image-img {
-    width: 95%;   /* Almost full width on mobile */
+  .post-featured-image img {
+    width: 95%;
   }
 }
 
