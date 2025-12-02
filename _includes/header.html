@@ -6,10 +6,14 @@
 
     <nav class="site-nav">
       <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/categories/deer-hunts/' | relative_url }}">Deer Hunts</a>
-      <a href="{{ '/categories/turkey-hunts/' | relative_url }}">Turkey Hunts</a>
-      <a href="{{ '/categories/fishing/' | relative_url }}">Fishing</a>
-      <a href="{{ '/categories/other-stories/' | relative_url }}">Other Stories</a>
+
+      {% for category in site.categories %}
+        {% assign name = category[0] %}
+        <a href="{{ '/categories/' | append: name | append: '/' | relative_url }}">
+          {{ name | replace: '-', ' ' | capitalize }}
+        </a>
+      {% endfor %}
+
       <a href="{{ '/about/' | relative_url }}">About</a>
     </nav>
   </div>
