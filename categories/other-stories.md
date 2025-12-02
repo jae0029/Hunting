@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Other Stories
-category: other-stories
 permalink: /categories/other-stories/
 ---
 
