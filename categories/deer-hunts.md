@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Deer Hunts
-permalink: Hunting/categories/deer-hunts/
+permalink: /categories/deer-hunts/
 ---
 
 # Deer Hunts
