@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   background: #f9f9f9;
   color: #333;
@@ -50,7 +50,7 @@ body {
 /* Posts */
 .post-header h1 {
   margin-bottom: 0.2rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .post-meta {
