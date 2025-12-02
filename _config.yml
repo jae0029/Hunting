@@ -8,3 +8,7 @@ plugins:
   - jekyll-seo-tag
 # Permalinks
 permalink: /:categories/:year/:month/:day/:title/
+
+collections:
+  posts:
+    output: true
