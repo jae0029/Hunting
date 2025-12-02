@@ -88,7 +88,19 @@ body {
 
 /* Individual post item (home page) */
 .post-item {
-  flex: 0 1 300px;           /* Card width: 300px min, flexible */
+  flex: 0 1 400px;  /* default width */
+}
+
+@media screen and (max-width: 1200px) {
+  .post-item {
+    flex: 0 1 350px;  /* slightly smaller for medium screens */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .post-item {
+    flex: 0 1 100%;   /* full width on small screens */
+  }
 }
 
 /* Post preview card (home page) */
