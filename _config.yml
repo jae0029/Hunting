@@ -1,14 +1,49 @@
-title: "Hunting Stories"
-description: "A collection of hunting adventures and gear reviews"
-baseurl: "/Hunting" # Leave empty for user.github.io/Hunting
-url: "https://jae0029.github.io"
-markdown: kramdown
-plugins:  
-  - jekyll-feed  
+# Site settings
+title: Hunting Stories
+description: "A collection of adventures in the outdoors"
+url: "https://jae0029.github.io"  # your GitHub Pages URL
+baseurl: "/Hunting"               # repository name if using project page; "" if using user page
+
+# Build settings
+markdown: kramdow
+plugins:
+  - jekyll-feed
   - jekyll-seo-tag
+
 # Permalinks
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /:categories/:title/
+
+# Author info (optional)
+author:
+  name: Joshua Etherton
+
+# Exclude these files/folders from build
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+# Optional defaults for posts
+defaults:
+  - scope:
+      path: ""       # all files
+      type: "posts"
+    values:
+      layout: post
+      author: Joshua Etherton
+      categories: Uncategorized
 
 collections:
-  posts:
+  deer-hunts:
     output: true
+    permalink: /deer-hunts/:title/
+  turkey-hunts:
+    output: true
+    permalink: /turkey-hunts/:title/
+  fishing:
+    output: true
+    permalink: /fishing/:title/
+  other-stories:
+    output: true
+    permalink: /other-stories/:title/
