@@ -2,9 +2,10 @@
 layout: default
 title: Fishing Trips
 category: fishing
+permalink: /categories/fishing/
 ---
 
-<h1>Fishing Trips</h1>
+# Fishing Trips
 
 <ul>
   {% for post in site.categories['fishing'] %}
