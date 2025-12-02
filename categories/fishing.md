@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Fishing Trips"
+title: Fishing Trips
 category: fishing
 ---
 
 <h1>Fishing Trips</h1>
 
 <ul>
-  {% for post in site.categories.fishing %}
+  {% for post in site.categories['fishing'] %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <span>{{ post.date | date: "%B %d, %Y" }}</span>
