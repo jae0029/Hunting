@@ -1,110 +1,161 @@
+/* ============================= */
+/*          GLOBAL STYLES        */
+/* ============================= */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; /* Change font for entire site here */
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background: #f9f9f9;             /* Change background color here */
+  color: #333;                      /* Default text color */
 }
 
-/* Layout */
+/* Container for centering content */
 .container {
-  max-width: 900px;
+  max-width: 900px;       /* Adjust max-width of site */
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Header */
+/* ============================= */
+/*            HEADER             */
+/* ============================= */
 .site-header {
-  background: #222;
-  color: #fff;
+  background: #222;       /* Header background color */
+  color: #fff;            /* Header text color */
   padding: 1rem 0;
   margin-bottom: 2rem;
 }
 
 .site-header a {
-  color: #fff;
+  color: #fff;            /* Header link color */
   text-decoration: none;
+}
+
+/* Navigation menu */
+.site-nav {
+  display: flex;          /* Flex layout for links */
+  gap: 1rem;              /* Space between links */
+  margin-top: 0.5rem;
 }
 
 .site-nav a {
-  margin-right: 1rem;
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: bold;      /* Make nav links bold */
+  color: #fff;            /* Nav link color */
+  text-decoration: none;  /* Remove underline */
 }
 
-/* Main content */
+.site-nav a:hover {
+  text-decoration: underline; /* Hover effect */
+}
+
+/* ============================= */
+/*            MAIN CONTENT       */
+/* ============================= */
 .site-main {
-  max-width: 72ch;          /* keeps text at a readable width */
-  margin: 0 auto;           /* centers the content horizontally */
-  padding: 0 1rem 2rem;      /* adds left/right breathing room + bottom padding */
+  max-width: 72ch;        /* Keeps text at readable width */
+  margin: 0 auto;
+  padding: 0 1rem 2rem;   /* Left/right padding + bottom */
 }
 
-/* Footer */
+/* Paragraph text */
+.site-main p,
+.post-content p {
+  text-align: justify;       /* Justify all post text */
+  text-justify: inter-word;  /* Better spacing */
+}
+
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
 .site-footer {
-  background: #eee;
+  background: #eee;          /* Footer background */
   padding: 1rem 0;
   text-align: center;
   margin-top: 2rem;
-}
-
-/* Posts */
-.post-header h1 {
-  margin-bottom: 0.2rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-.post-meta {
-  color: #666;
   font-size: 0.9rem;
 }
 
+/* ============================= */
+/*             POSTS             */
+/* ============================= */
+
+/* Post list container */
 .post-list {
-  max-width: 72ch;
-  margin: 0 auto;
-  padding: 0 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Individual post item */
 .post-item {
-  margin-bottom: .5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd; /* Separator between posts */
+  padding-bottom: 1.5rem;
 }
 
-.post-item a {
-  font-size: 1.2rem;
+/* Post title */
+.post-title a {
   text-decoration: none;
-  color: #333;
+  color: #222;             /* Change title color */
+  font-size: 1.5rem;       /* Adjust title size */
 }
 
+.post-title a:hover {
+  color: #007acc;          /* Hover color for titles */
+}
+
+/* Post metadata (date, category, etc.) */
+.post-meta {
+  color: #777;             /* Change metadata color */
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Post excerpt */
+.post-excerpt {
+  color: #555;             /* Excerpt text color */
+  font-size: 1rem;         /* Adjust excerpt size */
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* Read more link */
+.read-more {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007acc;          /* Link color */
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/*            POST HEADER        */
+/* ============================= */
+.post-header h1 {
+  margin-bottom: 0.2rem;
+  font-family: 'Poppins', sans-serif; /* Change font for post titles */
+}
+
+/* ============================= */
+/*            POST DATE          */
+/* ============================= */
 .post-date {
   display: block;
   color: #777;
   font-size: 0.9rem;
 }
 
-.post-excerpt {
-  margin: 0.5rem 0 1rem;
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.5;
-}
+/* ============================= */
+/*           CUSTOMIZABLE        */
+/* ============================= */
 
-/* Justify all post text */
-.site-main p,
-.post-content p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.site-nav {
-  display: flex;
-  gap: 1rem;
-}
-
-.site-nav a {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.site-nav a:hover {
-  text-decoration: underline;
-}
+/* To manually edit colors, fonts, spacing, etc., adjust the values above:
+   - Header background: .site-header { background: #222; }
+   - Header links: .site-nav a { color: #fff; }
+   - Body background: body { background: #f9f9f9; }
+   - Post title font/size: .post-title a { font-size: 1.5rem; font-family: ...; }
+   - Post excerpt font/size/color: .post-excerpt { font-size: 1rem; color: #555; }
+   - Post border spacing: .post-item { margin-bottom: 2rem; border-bottom: 1px solid #ddd; }
+*/
