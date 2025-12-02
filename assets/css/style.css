@@ -85,3 +85,18 @@ body {
   text-align: justify;
   text-justify: inter-word;
 }
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
