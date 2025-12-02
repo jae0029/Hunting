@@ -36,7 +36,7 @@ body {
 .site-main {
   max-width: 72ch;          /* keeps text at a readable width */
   margin: 0 auto;           /* centers the content horizontally */
-  padding: 0 1rem 2rem;  /* adds left/right breathing room + bottom padding */
+  padding: 0 1rem 2rem;      /* adds left/right breathing room + bottom padding */
 }
 
 /* Footer */
@@ -50,6 +50,7 @@ body {
 /* Posts */
 .post-header h1 {
   margin-bottom: 0.2rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .post-meta {
@@ -64,7 +65,7 @@ body {
 }
 
 .post-item {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .post-item a {
