@@ -9,6 +9,14 @@ layout: default
     {% for post in site.posts %}
       <li class="post-item">
         <article class="post-preview">
+          
+          <!-- Featured image -->
+          {% if post.featured_image %}
+            <a href="{{ post.url | relative_url }}">
+              <img class="post-featured-image" src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+            </a>
+          {% endif %}
+
           <!-- Post title -->
           <h2 class="post-title">
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
