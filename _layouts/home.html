@@ -13,7 +13,9 @@ layout: default
           <!-- Featured image -->
           {% if post.featured_image %}
             <a href="{{ post.url | relative_url }}">
-              <img class="home-featured-image" src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+              <img class="home-featured-image" 
+                   src="{{ post.featured_image | relative_url }}" 
+                   alt="{{ post.title }}">
             </a>
           {% endif %}
 
@@ -30,6 +32,7 @@ layout: default
             <p class="post-excerpt">{{ post.excerpt }}</p>
           {% endif %}
 
+          <!-- Read more link -->
           <a class="read-more" href="{{ post.url | relative_url }}">Read More →</a>
         </article>
       </li>
