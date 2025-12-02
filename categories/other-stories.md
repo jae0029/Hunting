@@ -2,9 +2,10 @@
 layout: default
 title: Other Stories
 category: other-stories
+permalink: /categories/other-stories/
 ---
 
-<h1>Other Stories</h1>
+# Other Stories
 
 <ul>
   {% for post in site.categories['other-stories'] %}
