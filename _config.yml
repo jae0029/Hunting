@@ -32,7 +32,6 @@ defaults:
     values:
       layout: post
       author: Joshua Etherton
-      categories: Uncategorized
 
 collections:
   deer-hunts:
