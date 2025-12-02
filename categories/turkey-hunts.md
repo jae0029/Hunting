@@ -2,9 +2,11 @@
 layout: default
 title: Turkey Hunts
 category: turkey-hunts
+permalink: /categories/turkey-hunts/
 ---
 
-<h1>Turkey Hunts</h1>
+# Turkey Hunts
+
 
 <ul>
   {% for post in site.categories['turkey-hunts'] %}
