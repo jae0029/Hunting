@@ -3,3 +3,8 @@ description: "A collection of hunting adventures and gear reviews"
 baseurl: "/Hunting" # Leave empty for user.github.io/Hunting
 url: "https://jae0029.github.io"
 markdown: kramdown
+plugins:  
+  - jekyll-feed  
+  - jekyll-seo-tag
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
