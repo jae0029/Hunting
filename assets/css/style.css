@@ -181,7 +181,7 @@ body {
 .post-featured-image-img {
   display: block;
   margin: 0 auto;                 /* Center horizontally */
-  width: 100%;                     /* 80% of the post container width */
+  width: 60%;                     /* 80% of the post container width */
   max-width: 100%;                /* Never exceed container width */
   height: auto;                   /* Maintain aspect ratio */
   border: 2px solid #ccc;
