@@ -176,6 +176,11 @@ body {
 .post-featured-image {
   text-align: center;             /* Center figure content */
   margin: 2rem auto 3rem;         /* Top 2rem, bottom 3rem */
+  display: block;
+  margin: 0 auto;                 /* Center horizontally */
+  width: 50%;                     /* 80% of the post container width */
+  max-width: 100%;                /* Never exceed container width */
+  height: auto;     
 }
 
 .post-featured-image-img {
