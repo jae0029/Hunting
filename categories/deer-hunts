@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Deer Hunting Posts"
+category: deer-hunts
+---
+
+<h1>Deer Hunting Posts</h1>
+
+<ul>
+  {% for post in site.categories.deer-hunts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>{{ post.date | date: "%B %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
