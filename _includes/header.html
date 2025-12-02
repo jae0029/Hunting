@@ -1,20 +1,12 @@
-<header class="site-header">
-  <div class="container">
-    <h1 class="site-title">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </h1>
+<nav class="site-nav">
+  <a href="{{ '/' | relative_url }}">Home</a>
 
-    <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}">Home</a>
+  {% for category in site.categories %}
+    {% assign name = category[0] %}
+    <a href="{{ '/categories/' | append: name | append: '/' | relative_url }}">
+      {{ name | replace: '-', ' ' | capitalize }}
+    </a>
+  {% endfor %}
 
-      {% for category in site.categories %}
-        {% assign name = category[0] %}
-        <a href="{{ '/categories/' | append: name | append: '/' | relative_url }}">
-          {{ name | replace: '-', ' ' | capitalize }}
-        </a>
-      {% endfor %}
-
-      <a href="{{ '/about/' | relative_url }}">About</a>
-    </nav>
-  </div>
-</header>
+  <a href="{{ '/about/' | relative_url }}">About</a>
+</nav>
