@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: default
 title: Blog
-permalink: /blog/
 ---
 
-# Blog Posts
+# Blog
+
+This is a simple Jekyll blog.
