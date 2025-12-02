@@ -106,12 +106,26 @@ body {
   color: #007acc;          /* Hover color for titles */
 }
 
+/* Post title */
+.post-title {
+  font-size: 1.3rem;       /* Adjust title size */
+  margin: 0.5rem 0;      
+}
+
+/* Post preview */
+.post-preview {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
 /* Post metadata (date, category, etc.) */
 .post-meta {
   color: #777;             /* Change metadata color */
-  font-size: 0.9rem;
-  margin-top: 0.0rem;      /* Space above text */
-  margin-bottom: 0.0rem;   /* Space below text */
+  font-size: 0.85rem;
 }
 
 /* Post excerpt */
@@ -119,7 +133,7 @@ body {
   color: #555;             /* Excerpt text color */
   font-size: 1rem;         /* Adjust excerpt size */
   line-height: 1.5;
-  margin-bottom: 0.25rem;   /* Space below text */
+  margin: 0.5rem 0 1rem;   /* Space below text */
 }
 
 /* Read more link */
