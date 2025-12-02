@@ -155,7 +155,7 @@ body {
 /* ============================= */
 /*        FEATURED IMAGE         */
 /* ============================= */
-.post-featured-image {
+.featured-image {
   width: 50%;              /* Full width of container */
   max-height: 300px;        /* Optional: limit height */
   object-fit: cover;        /* Crop to fit nicely */
@@ -181,7 +181,7 @@ body {
 .post-featured-image-img {
   display: block;
   margin: 0 auto;                 /* Center horizontally */
-  width: 60%;                     /* 80% of the post container width */
+  width: 50%;                     /* 80% of the post container width */
   max-width: 100%;                /* Never exceed container width */
   height: auto;                   /* Maintain aspect ratio */
   border: 2px solid #ccc;
@@ -203,7 +203,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .post-featured-image img {
+  .post-featured-image-img {
     width: 95%;   /* Almost full width on mobile */
   }
 }
