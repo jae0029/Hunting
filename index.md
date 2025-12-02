@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Home"
+title: "Feed"
 ---
 
 <h1>Hunting Stories</h1>
