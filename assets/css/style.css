@@ -3,15 +3,14 @@
 /* ============================= */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif; /* Change font for entire site here */
+  font-family: 'Inter', sans-serif; /* Global font */
   line-height: 1.6;
-  background: #f9f9f9;             /* Change background color here */
+  background: #f9f9f9;             /* Page background */
   color: #333;                      /* Default text color */
 }
 
-/* Container for centering content */
 .container {
-  max-width: 900px;       /* Adjust max-width of site */
+  max-width: 900px;                 /* Max width of site */
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -20,55 +19,53 @@ body {
 /*            HEADER             */
 /* ============================= */
 .site-header {
-  background: #222;       /* Header background color */
-  color: #fff;            /* Header text color */
+  background: #222;
+  color: #fff;
   padding: 1rem 0;
   margin-bottom: 2rem;
 }
 
 .site-header a {
-  color: #fff;            /* Header link color */
+  color: #fff;
   text-decoration: none;
 }
 
-/* Navigation menu */
 .site-nav {
-  display: flex;          /* Flex layout for links */
-  gap: 1rem;              /* Space between links */
+  display: flex;
+  gap: 1rem;
   margin-top: 0.5rem;
 }
 
 .site-nav a {
-  font-weight: bold;      /* Make nav links bold */
-  color: #fff;            /* Nav link color */
-  text-decoration: none;  /* Remove underline */
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-nav a:hover {
-  text-decoration: underline; /* Hover effect */
+  text-decoration: underline;
 }
 
 /* ============================= */
 /*            MAIN CONTENT       */
 /* ============================= */
 .site-main {
-  max-width: 72ch;        /* Keeps text at readable width */
+  max-width: 72ch;
   margin: 0 auto;
-  padding: 0 1rem 2rem;   /* Left/right padding + bottom */
+  padding: 0 1rem 2rem;
 }
 
-/* Paragraph text */
 .site-main p,
 .post-content p {
-  text-align: justify;       /* Justify all post text */
-  text-justify: inter-word;  /* Better spacing */
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* ============================= */
 /*            FOOTER             */
 /* ============================= */
 .site-footer {
-  background: #eee;          /* Footer background */
+  background: #eee;
   padding: 1rem 0;
   text-align: center;
   margin-top: 2rem;
@@ -79,68 +76,67 @@ body {
 /*             POSTS             */
 /* ============================= */
 
-/* Post list container */
+/* Post list container (home page) */
 .post-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;                /* Space between cards */
+  justify-content: center;   /* Center cards */
 }
 
-/* Individual post item */
+/* Individual post item (home page) */
 .post-item {
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #ddd; /* Separator between posts */
-  padding-bottom: 1.5rem;
+  flex: 0 1 300px;           /* Card width: 300px min, flexible */
 }
 
-/* Post title */
+/* Post preview card (home page) */
+.post-preview {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+/* Post title and links */
+.post-title {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
 .post-title a {
   text-decoration: none;
-  color: #222;             /* Change title color */
-  font-size: 1.5rem;       /* Adjust title size */
-  margin-top: 0.0rem;      /* Space above text */
-  margin-bottom: 0.0rem;   /* Space below text */
+  color: #222;
 }
 
 .post-title a:hover {
-  color: #007acc;          /* Hover color for titles */
-}
-
-/* Post title */
-.post-title {
-  font-size: 1.3rem;       /* Adjust title size */
-  margin: 0.5rem 0;      
-}
-
-/* Post preview */
-.post-preview {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  color: #007acc;
 }
 
 /* Post metadata (date, category, etc.) */
 .post-meta {
-  color: #777;             /* Change metadata color */
+  color: #777;
   font-size: 0.85rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Post excerpt */
 .post-excerpt {
-  color: #555;             /* Excerpt text color */
-  font-size: 1rem;         /* Adjust excerpt size */
+  color: #555;
+  font-size: 1rem;
   line-height: 1.5;
-  margin: 0.5rem 0 1rem;   /* Space below text */
+  margin: 0.5rem 0 1rem;
 }
 
 /* Read more link */
 .read-more {
   text-decoration: none;
   font-weight: bold;
-  color: #007acc;          /* Link color */
+  color: #007acc;
 }
 
 .read-more:hover {
@@ -148,38 +144,32 @@ body {
 }
 
 /* ============================= */
-/*            POST HEADER        */
+/*        POST PAGE STYLES       */
 /* ============================= */
 .post-header h1 {
-  margin-bottom: 0.0rem;     /* Space below text */
-  font-family: 'Poppins', sans-serif; /* Change font for post titles */
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif; /* Post title font */
 }
 
-/* ============================= */
-/*            POST DATE          */
-/* ============================= */
 .post-date {
   display: block;
   color: #777;
   font-size: 0.9rem;
-  margin-top: 0.0rem;     /* Space above text */
-  margin-bottom: 0.1rem;   /* Space below text */
+  margin-bottom: 0.5rem;
 }
 
-/* ============================= */
-/*      POST FEATURED IMAGE      */
-/* ============================= */
+/* Featured image for post pages */
 .post-featured-image {
-  text-align: center;            /* Center figure content */
-  margin: 2rem auto 3rem;        /* Top 2rem, bottom 3rem */
+  text-align: center;
+  margin: 2rem auto 3rem;
 }
 
 .post-featured-image img {
   display: block;
-  margin: 0 auto;                /* Center horizontally */
-  width: 80%;                     /* 80% of post container width */
-  max-width: 100%;               /* Never exceed container */
-  height: auto;                  /* Maintain aspect ratio */
+  margin: 0 auto;
+  width: 80%;              /* 80% of post container width */
+  max-width: 100%;
+  height: auto;
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 2.5px;
@@ -188,7 +178,7 @@ body {
 }
 
 .post-featured-image img:hover {
-  transform: scale(1.00);        /* Optional subtle zoom on hover */
+  transform: scale(1.00);
 }
 
 .post-featured-image figcaption {
@@ -198,7 +188,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Responsive: almost full width on small screens */
 @media screen and (max-width: 600px) {
   .post-featured-image img {
     width: 95%;
@@ -206,32 +195,31 @@ body {
 }
 
 /* ============================= */
-/*      HOME PAGE POST IMAGE     */
+/*      HOME PAGE FEATURED IMAGE  */
 /* ============================= */
-.home-post-image {
+.home-featured-image {
   display: block;
-  width: 100%;       /* Full width of the home post container */
-  max-width: 300px;  /* Limit so images aren’t huge */
+  width: 100%;         /* fill the post card */
+  max-width: 300px;    /* cap image size */
   height: auto;
-  margin-bottom: 0.5rem;
+  margin: 0 auto 0.5rem;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.home-post-image:hover {
+.home-featured-image:hover {
   transform: scale(1.05);
 }
 
 /* ============================= */
 /*           CUSTOMIZABLE        */
 /* ============================= */
-
-/* To manually edit colors, fonts, spacing, etc., adjust the values above:
-   - Header background: .site-header { background: #222; }
-   - Header links: .site-nav a { color: #fff; }
-   - Body background: body { background: #f9f9f9; }
-   - Post title font/size: .post-title a { font-size: 1.5rem; font-family: ...; }
-   - Post excerpt font/size/color: .post-excerpt { font-size: 1rem; color: #555; }
-   - Post border spacing: .post-item { margin-bottom: 2rem; border-bottom: 1px solid #ddd; }
+/* Edit colors, fonts, spacing, etc. above to style your blog:
+   - Header: .site-header { background: #222; }
+   - Body: body { background: #f9f9f9; color: #333; }
+   - Post titles: .post-title a { font-size: 1.5rem; color: #222; }
+   - Post excerpt: .post-excerpt { font-size: 1rem; color: #555; }
+   - Post card spacing: .post-item { margin-bottom: 2rem; }
 */
