@@ -3,9 +3,9 @@ layout: post
 title: "2024 Deer Season Recap"
 date: 2025-04-02
 categories: deer-hunts
-featured_image: /assets/images/IMG_----.jpeg
-image: IMG_----.jpeg
-image_caption: ""
+featured_image: /assets/images/IMG_0163.jpeg
+image: IMG_0163.jpeg
+image_caption: "Theo and Daddy on their first deer hunt together!"
 excerpt: "He went 25 yards and tangled up in the brush"
 ---
 
