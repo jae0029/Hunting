@@ -191,7 +191,7 @@ body {
 }
 
 .post-content figure img:hover {
-  transform: scale(1.02);
+  transform: scale(1.00);
 }
 
 .post-content figure figcaption {
