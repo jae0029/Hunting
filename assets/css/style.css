@@ -88,7 +88,7 @@ body {
 
 /* Individual post item */
 .post-item {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid #ddd; /* Separator between posts */
   padding-bottom: 1.5rem;
 }
@@ -98,6 +98,8 @@ body {
   text-decoration: none;
   color: #222;             /* Change title color */
   font-size: 1.5rem;       /* Adjust title size */
+  margin-top: 0.0rem;      /* Space above text */
+  margin-bottom: 0.0rem;   /* Space below text */
 }
 
 .post-title a:hover {
@@ -108,7 +110,8 @@ body {
 .post-meta {
   color: #777;             /* Change metadata color */
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.0rem;      /* Space above text */
+  margin-bottom: 0.0rem;   /* Space below text */
 }
 
 /* Post excerpt */
@@ -116,7 +119,7 @@ body {
   color: #555;             /* Excerpt text color */
   font-size: 1rem;         /* Adjust excerpt size */
   line-height: 1.5;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem;   /* Space below text */
 }
 
 /* Read more link */
