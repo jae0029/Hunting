@@ -34,7 +34,9 @@ body {
 
 /* Main content */
 .site-main {
-  padding-bottom: 2rem;
+  max-width: 72ch;          /* keeps text at a readable width */
+  margin: 0 auto;           /* centers the content horizontally */
+  padding: 0 1.25rem 2rem;  /* adds left/right breathing room + bottom padding */
 }
 
 /* Footer */
@@ -56,8 +58,9 @@ body {
 }
 
 .post-list {
-  list-style: none;
-  padding: 0;
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .post-item {
