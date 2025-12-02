@@ -148,6 +148,24 @@ body {
 }
 
 /* ============================= */
+/*        FEATURED IMAGE         */
+/* ============================= */
+.post-featured-image {
+  width: 20%;              /* Full width of container */
+  max-height: 300px;        /* Optional: limit height */
+  object-fit: cover;        /* Crop to fit nicely */
+  margin-bottom: 0.75rem;   /* Space below image */
+  border-radius: 6px;       /* Optional: rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  display: block;
+}
+
+.post-featured-image:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* ============================= */
 /*           CUSTOMIZABLE        */
 /* ============================= */
 
