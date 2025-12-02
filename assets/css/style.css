@@ -17,9 +17,6 @@ header a, footer a {
 nav {
   margin-top: 10px;
 }
-main {
-  padding: 20px;
-}
 
 /* Constrain main content width and center it */
 main {
@@ -72,10 +69,51 @@ main img {
   }
 }
 
+/* Constrain article width and center it */
 article {
-  max-width: 72ch;
-  margin: 2rem auto;
-  padding: 0 1.25rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
+  max-width: 72ch;          /* Keeps line length readable */
+  margin: 2rem auto;        /* Centers content horizontally */
+  padding: 0 1.25rem;       /* Adds breathing room on small screens */
+  font-size: 1.05rem;       /* Slightly larger text for readability */
+  line-height: 1.7;         /* Comfortable line spacing */
 }
+
+/* Improve headings inside article */
+article h1, article h2, article h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+/* Paragraph spacing */
+article p {
+  margin: 1rem 0;
+}
+
+/* Images inside article */
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 6px; /* optional */
+}
+
+/* Figure styling */
+figure {
+  text-align: center;
+  margin: 2rem auto;
+}
+figure img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Responsive tweak */
+@media (min-width: 768px) {
+  article {
+    padding: 0 2rem;
+  }
+}
+
