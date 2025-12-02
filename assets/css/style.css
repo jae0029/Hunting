@@ -178,7 +178,7 @@ body {
   margin: 2rem auto 3rem;         /* Top 2rem, bottom 3rem */
 }
 
-.post-featured-image img {
+.post-featured-image-img {
   display: block;
   margin: 0 auto;                 /* Center horizontally */
   width: 100%;                     /* 80% of the post container width */
@@ -191,7 +191,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.post-featured-image img:hover {
+.post-featured-image-img:hover {
   transform: scale(1.00);         /* Optional hover zoom effect */
 }
 
