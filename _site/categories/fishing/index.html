@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fishing Trips | Hunting Stories</title>
+  <title>Fishing | Hunting Stories</title>
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Fishing Trips | Hunting Stories</title>
+<title>Fishing | Hunting Stories</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Fishing Trips" />
+<meta property="og:title" content="Fishing" />
 <meta name="author" content="Joshua Etherton" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A collection of adventures in the outdoors" />
@@ -18,9 +18,9 @@
 <meta property="og:site_name" content="Hunting Stories" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Fishing Trips" />
+<meta property="twitter:title" content="Fishing" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Joshua Etherton"},"description":"A collection of adventures in the outdoors","headline":"Fishing Trips","url":"http://localhost:4000/Hunting/categories/fishing/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Joshua Etherton"},"description":"A collection of adventures in the outdoors","headline":"Fishing","url":"http://localhost:4000/Hunting/categories/fishing/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -56,6 +56,11 @@
             Fishing
           </a>
         
+          
+          <a href="/Hunting/categories/other-stories/">
+            Other stories
+          </a>
+        
 
         <!-- Static pages -->
         <a href="/Hunting/gallery/">Gallery</a>
@@ -67,16 +72,104 @@
   <!-- Main content -->
   <main class="site-main">
     <div class="container">
-      <h1 id="fishing-trips">Fishing Trips</h1>
+      <div class="home-container">
+  <h1>Fishing</h1>
 
-<ul>
-  
-    <li>
-      <a href="/fishing/best-summer-ever/">Best Summer Ever</a>
-      <span>September 01, 2025</span>
-    </li>
-  
-</ul>
+  <ul class="post-list">
+    
+    
+      <li class="post-item">
+        <article class="post-card">
+          <div class="post-content">
+            <!-- Post title -->
+            <h2 class="post-title">
+              <a href="/Hunting/fishing/best-summer-ever/">Best Summer Ever</a>
+            </h2>
+
+            <!-- Post date -->
+            <p class="post-meta">Sep 1, 2025</p>
+
+            <!-- Post excerpt -->
+            
+              <p class="post-excerpt">This summer was the best one I've ever had in my life</p>
+            
+
+            <!-- Read more link -->
+            <a class="read-more" href="/Hunting/fishing/best-summer-ever/">Read More →</a>
+          </div>
+
+          <!-- Featured image -->
+          
+            <div class="post-image">
+              <a href="/Hunting/fishing/best-summer-ever/">
+                <img src="/Hunting/assets/images/boys-in-canoe.jpeg" alt="Best Summer Ever" />
+              </a>
+            </div>
+          
+        </article>
+      </li>
+    
+  </ul>
+</div>
+
+<style>
+/* General list styles */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  margin-bottom: 2rem;
+}
+
+/* Card styles */
+.post-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* make content and image same height */
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  gap: 1rem;
+}
+
+/* Text content */
+.post-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes Read More to bottom if content is taller */
+}
+
+/* Featured image */
+.post-image {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.post-image img {
+  width: 200px; /* smaller size */
+  height: 100%; /* match text height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .post-card {
+    flex-direction: column;
+  }
+  .post-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
 
     </div>
   </main>

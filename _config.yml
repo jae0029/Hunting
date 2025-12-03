@@ -5,7 +5,7 @@ url: "https://jae0029.github.io"  # your GitHub Pages URL
 baseurl: "/Hunting"               # repository name if using project page; "" if using user page
 
 # Build settings
-markdown: kramdow
+markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
