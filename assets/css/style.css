@@ -227,27 +227,28 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
-.gallery-item { margin: 0; 
-               text-align: center; 
-              }
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
 
-.gallery-item img { width: 100%; 
-                   height: auto; 
-                   border-radius: 6px; 
-                   display: block; 
-                   object-fit: cover; 
-                  }
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
 
-.gallery-item figcaption { font-size: 0.9rem; 
-                          color: #555; 
-                          margin-top: 0.5rem; 
-                          line-height: 1.4; 
-                         }
+.gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
 
 /* ============================= */
 /*           CUSTOMIZABLE        */
