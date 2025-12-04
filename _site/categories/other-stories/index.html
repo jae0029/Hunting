@@ -27,19 +27,27 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="/Hunting/assets/css/style.css">
 </head>
-<body>
+<body class="categoriesother-stories">
 
-  <!-- Header -->
-  <header class="site-header">
+ <!-- Header -->
+<header class="site-header">
+  
     <div class="container">
       <h1 class="site-title">
         <a href="/Hunting/">Hunting Stories</a>
       </h1>
 
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <input type="checkbox" id="nav-toggle">
+
       <nav class="site-nav">
         <a href="/Hunting/">Home</a>
 
-        <!-- Dynamic categories menu -->
         
           
           <a href="/Hunting/categories/turkey-hunts/">
@@ -62,36 +70,140 @@
           </a>
         
 
-        <!-- Static pages -->
         <a href="/Hunting/gallery/">Gallery</a>
         <a href="/Hunting/about/">About</a>
       </nav>
     </div>
-  </header>
+  
+</header>
 
   <!-- Main content -->
-  <main class="site-main">
+<main class="site-main">
+  
     <div class="container">
-      <h1 id="other-stories">Other Stories</h1>
+      <div class="home-container">
+  <h1>Other Stories</h1>
 
-<ul>
-  
-    <li>
-      <a href="/other-stories/camping-so-far/">Camping So Far</a>
-      <span>December 03, 2025</span>
-    </li>
-  
-</ul>
+  <ul class="post-list">
+    
+    
+      <li class="post-item">
+        <article class="post-card">
+          <div class="post-content">
+            <!-- Post title -->
+            <h2 class="post-title">
+              <a href="/Hunting/other-stories/camping-so-far/">Camping So Far</a>
+            </h2>
+
+            <!-- Post date -->
+            <p class="post-meta">Dec 3, 2025</p>
+
+            <!-- Post excerpt -->
+            
+              <p class="post-excerpt">Looking forward to figuring this stuff out with my buddies!</p>
+            
+
+            <!-- Read more link -->
+            <a class="read-more" href="/Hunting/other-stories/camping-so-far/">Read More →</a>
+          </div>
+
+          <!-- Featured image -->
+          
+            <div class="post-image">
+              <a href="/Hunting/other-stories/camping-so-far/">
+                <img src="/Hunting/assets/images/camping-with-the-boys.jpeg" alt="Camping So Far" />
+              </a>
+            </div>
+          
+        </article>
+      </li>
+    
+  </ul>
+</div>
+
+<style>
+/* General list styles */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  margin-bottom: 0.25rem; /* less vertical space between cards */
+}
+
+/* Card styles */
+.post-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* make content and image same height */
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem; /* reduce vertical padding */
+  border-radius: 8px;
+  background: #fff;
+  gap: 1.5rem; /* slightly less gap between image and text */
+}
+
+/* Text content */
+.post-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes Read More to bottom if content is taller */
+}
+
+/* Featured image */
+.post-image {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.post-image img {
+  width: 180px; /* slightly smaller image */
+  height: 100%; /* match text height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  .post-card {
+    flex-direction: column; /* stack image above text */
+    align-items: center;
+    padding: 0.5rem 0.75rem; /* reduce padding further on small screens */
+  }
+
+  .post-image img {
+    width: 100%;
+    max-width: 250px; /* smaller max-width */
+    height: auto;
+    object-fit: cover;
+  }
+
+  .post-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* add small spacing between image and text */
+  }
+}
+</style>
+
 
     </div>
-  </main>
+  
+</main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
+<!-- Footer -->
+<footer class="site-footer">
+  
     <div class="container">
       <p>&copy; 2025 Hunting Stories. Powered by Jekyll.</p>
     </div>
-  </footer>
+  
+</footer>
 
 </body>
 </html>

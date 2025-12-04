@@ -10,19 +10,28 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body>
+<body class="{{ page.slug | default: page.url | replace: '/', '' }}">
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
+ <!-- Header -->
+<header class="site-header">
+  {% if page.url == "/gallery/" %}
+    <!-- Full-width header for gallery -->
+    <div class="gallery-header">
       <h1 class="site-title">
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </h1>
 
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <input type="checkbox" id="nav-toggle">
+
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
 
-        <!-- Dynamic categories menu -->
         {% for category in site.categories %}
           {% assign name = category[0] %}
           <a href="{{ '/categories/' | append: name | append: '/' | relative_url }}">
@@ -30,26 +39,67 @@
           </a>
         {% endfor %}
 
-        <!-- Static pages -->
         <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
       </nav>
     </div>
-  </header>
+  {% else %}
+    <div class="container">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </h1>
+
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <input type="checkbox" id="nav-toggle">
+
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+
+        {% for category in site.categories %}
+          {% assign name = category[0] %}
+          <a href="{{ '/categories/' | append: name | append: '/' | relative_url }}">
+            {{ name | replace: '-', ' ' | capitalize }}
+          </a>
+        {% endfor %}
+
+        <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </div>
+  {% endif %}
+</header>
 
   <!-- Main content -->
-  <main class="site-main">
+<main class="site-main">
+  {% if page.url == "/gallery/" %}
+    <!-- Full-width gallery container -->
+    <div class="gallery-page">
+      {{ content }}
+    </div>
+  {% else %}
     <div class="container">
       {{ content }}
     </div>
-  </main>
+  {% endif %}
+</main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
+<!-- Footer -->
+<footer class="site-footer">
+  {% if page.url == "/gallery/" %}
+    <div class="gallery-footer">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Powered by Jekyll.</p>
+    </div>
+  {% else %}
     <div class="container">
       <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Powered by Jekyll.</p>
     </div>
-  </footer>
+  {% endif %}
+</footer>
 
 </body>
 </html>

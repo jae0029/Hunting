@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Opening Day of the 2020 Turkey Season (Not Really)"
+date: 2020-03-15
+categories: turkey-hunts
+featured_image: 
+image: 
+image_caption: 
+excerpt: "So, with 45 minutes until sunrise I ease the bolt back out of my 12-gauge."
+---
+
+I got out to Nana‘s pasture about an hour and a half before the sun was supposed to rise. This was due to the weather app on my phone screwing up and showing mountain time for Opelika, AL. I am unaware of this, and as I slowly make my way to the exact spot that I killed my first turkey just one year prior. The northwest corner of the fenced in part of the pasture, facing into the large part of the pasture with my back against an old railroad tie, that used to hold a gate at one point in time. As I begin to realize that sunrise is not coming as soon as I was led to believe, I pull out my phone to check, still confused. I decided to go ahead and make sure the season started when I thought it did as I had yet to lay eyes on the actual regulations for this year (the season usually started on the second weekend in March). It turns out this year’s season has been delayed a week for research purposes. So, with 45 minutes until sunrise I ease the bolt back out of my 12-gauge Remington Versa Max, flinging my red, 3 1/2-inch Xtreme turkey shell onto the ground. This is no longer a hunt, this is a scouting trip. I enjoy the waking up of the forest sadly no goggles after sitting for an hour after daylight, I decided to go look for turkey tracks. I stand up, threading my arm through the new backpack that I got a year or two ago. I’m using it only because I would like to get a feel for using one while hunting before I go big game Hunting out west. I make my way to the pond drain that the beaver had been damming up. Once I had freed the flow of water, I turned my attention to the faint cloud of smoke coming from the back of my aunt Carla’s house. I gave her a call to make sure all was well and it was. I spent the next two hours walking back-and-forth across the land that had been cut and had the stumps removed, looking for any sign of that a turkey had been there. I finally found a track 20 yards away from the furthest extending shoot of woods on the south end of the pond I followed them northwest straight across the clearcut. The tracks ran right by a big tree left by the loggers, before disappearing into the woods. I make my way back across the clearcut, dam, and the pasture to my truck. This marked the end of the scouting trip one week before opening day of the 2020 turkey season opener.

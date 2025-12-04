@@ -53,7 +53,7 @@ permalink: /categories/fishing/
 }
 
 .post-item {
-  margin-bottom: 2rem;
+  margin-bottom: 0.25rem; /* less vertical space between cards */
 }
 
 /* Card styles */
@@ -62,10 +62,10 @@ permalink: /categories/fishing/
   flex-direction: row;
   align-items: stretch; /* make content and image same height */
   border: 1px solid #ddd;
-  padding: 1rem;
+  padding: 0.75rem 1rem; /* reduce vertical padding */
   border-radius: 8px;
   background: #fff;
-  gap: 1rem;
+  gap: 1.5rem; /* slightly less gap between image and text */
 }
 
 /* Text content */
@@ -84,20 +84,32 @@ permalink: /categories/fishing/
 }
 
 .post-image img {
-  width: 200px; /* smaller size */
+  width: 180px; /* slightly smaller image */
   height: 100%; /* match text height */
   object-fit: cover;
   border-radius: 8px;
 }
 
 /* Responsive layout for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .post-card {
-    flex-direction: column;
+    flex-direction: column; /* stack image above text */
+    align-items: center;
+    padding: 0.5rem 0.75rem; /* reduce padding further on small screens */
   }
+
   .post-image img {
     width: 100%;
+    max-width: 250px; /* smaller max-width */
     height: auto;
+    object-fit: cover;
+  }
+
+  .post-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; /* add small spacing between image and text */
   }
 }
 </style>

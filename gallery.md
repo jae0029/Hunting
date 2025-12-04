@@ -22,29 +22,32 @@ permalink: /gallery/
 
 {% assign gallery_items = gallery_items_md | concat: gallery_items_static %}
 
-<div class="gallery">
-  {% for item in gallery_items %}
-    <figure class="gallery-item">
-      {% if item.image %}
-        <!-- From MD file -->
-        <a href="{{ item.image | relative_url }}" class="lightbox-link" data-index="{{ forloop.index0 }}">
-          <img src="{{ item.image | relative_url }}" alt="{{ item.title | default: item.name }}">
-        </a>
-        <figcaption>
-          {% if item.title %}<strong>{{ item.title }}</strong>{% endif %}
-          {% if item.caption %}<br>{{ item.caption }}{% endif %}
-          {% if item.date %}<br><small>{{ item.date | date: "%B %d, %Y" }}</small>{% endif %}
-          {% if item.tags %}<br><small>Tags: {{ item.tags | join: ", " }}</small>{% endif %}
-        </figcaption>
-      {% else %}
-        <!-- From static image -->
-        <a href="{{ item.path | relative_url }}" class="lightbox-link" data-index="{{ forloop.index0 }}">
-          <img src="{{ item.path | relative_url }}" alt="{{ item.name | split: '.' | first }}">
-        </a>
-        <figcaption>{{ item.name | split: '.' | first }}</figcaption>
-      {% endif %}
-    </figure>
-  {% endfor %}
+<!-- Full-width gallery container -->
+<div class="gallery-page">
+  <div class="gallery">
+    {% for item in gallery_items %}
+      <figure class="gallery-item">
+        {% if item.image %}
+          <!-- From MD file -->
+          <a href="{{ item.image | relative_url }}" class="lightbox-link" data-index="{{ forloop.index0 }}">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.title | default: item.name }}">
+          </a>
+          <figcaption>
+            {% if item.title %}<strong>{{ item.title }}</strong>{% endif %}
+            {% if item.caption %}<br>{{ item.caption }}{% endif %}
+            {% if item.date %}<br><small>{{ item.date | date: "%B %d, %Y" }}</small>{% endif %}
+            {% if item.tags %}<br><small>Tags: {{ item.tags | join: ", " }}</small>{% endif %}
+          </figcaption>
+        {% else %}
+          <!-- From static image -->
+          <a href="{{ item.path | relative_url }}" class="lightbox-link" data-index="{{ forloop.index0 }}">
+            <img src="{{ item.path | relative_url }}" alt="{{ item.name | split: '.' | first }}">
+          </a>
+          <figcaption>{{ item.name | split: '.' | first }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
 </div>
 
 <!-- Lightbox and navigation code remains exactly the same as before -->
@@ -123,25 +126,6 @@ permalink: /gallery/
 .next { right: 20px; }
 
 .prev:hover, .next:hover { color: #bbb; }
-
-/* Gallery grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover { transform: scale(1.05); }
 </style>
 
 <script>

@@ -34,16 +34,93 @@ body {
   display: flex;
   gap: 1rem;
   margin-top: 0.5rem;
+
+  /* --- Prevent wrapping and allow scroll on smaller screens --- */
+  white-space: nowrap;             /* keeps all links on one line */
+  overflow-x: auto;                /* enable horizontal scrolling if needed */
+  -webkit-overflow-scrolling: touch;  /* smooth scrolling on mobile */
 }
 
 .site-nav a {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+
+  flex-shrink: 0;                   /* prevent items from squishing */
 }
 
 .site-nav a:hover {
   text-decoration: underline;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  gap: 6px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Hide checkbox */
+#nav-toggle {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hidden by default with slide-up collapsed height */
+  .site-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    background: #222;
+    padding: 0 1rem; /* padding left/right only until opened */
+    margin-top: 1rem;
+    border-radius: 6px;
+
+    max-height: 0;           /* fully collapsed */
+    overflow: hidden;        /* hide content during animation */
+    opacity: 0;              /* fade out */
+    transition:
+      max-height 0.35s ease,
+      opacity 0.25s ease,
+      padding 0.25s ease;
+  }
+
+  /* When menu is opened */
+  #nav-toggle:checked + .site-nav {
+    padding: 1rem;           /* restore padding */
+    max-height: 500px;       /* enough room for all links */
+    opacity: 1;
+  }
+}
+
+/* (Optional) animate hamburger into an X */
+#nav-toggle:checked + .site-nav + .hamburger span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+#nav-toggle:checked + .site-nav + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-toggle:checked + .site-nav + .hamburger span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 /* ============================= */
@@ -59,7 +136,9 @@ body {
 .post-content p {
   text-align: justify;
   text-justify: inter-word;
+  text-indent: 1.2em; /* Indent first line of each paragraph */
 }
+
 
 /* ============================= */
 /*            FOOTER             */
@@ -82,7 +161,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;                /* Space between cards */
+  gap: 1rem;                /* Space between cards */
   justify-content: center;   /* Center cards */
 }
 
@@ -91,13 +170,7 @@ body {
   flex: 0 1 600px;  /* default width */
 }
 
-@media screen and (max-width: 1000px) {
-  .post-item {
-    flex: 0 1 400px;  /* slightly smaller for medium screens */
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .post-item {
     flex: 0 1 100%;   /* full width on small screens */
   }
@@ -106,12 +179,12 @@ body {
 /* Post preview card (home page) */
 .post-preview {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border: 1px solid #ddd;
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
 }
 
 /* Post title and links */
@@ -133,22 +206,24 @@ body {
 .post-meta {
   color: #777;
   font-size: 0.85rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 /* Post excerpt */
 .post-excerpt {
   color: #555;
   font-size: 1rem;
-  line-height: 1.5;
-  margin: 0.5rem 0 1rem;
+  line-height: 1.4;
+  margin: 0.25rem 0 0.5rem;
 }
 
 /* Read more link */
 .read-more {
+  display: inline-block;
   text-decoration: none;
   font-weight: bold;
   color: #007acc;
+  margin-top: 0.25rem;
 }
 
 .read-more:hover {
@@ -225,11 +300,55 @@ body {
   transform: scale(1.05);
 }
 
-.gallery {
+body.gallery .site-main {
+  max-width: 100%; /* allow full-width */
+  padding: 0;
+}
+
+/* Center the gallery on large screens */
+body.gallery .gallery-page {
+  width: 100%;
+  max-width: 1200px; /* optional: caps width on very large screens */
+  margin: 0 auto;    /* centers the gallery horizontally */
+  padding: 1rem;     /* optional spacing from edges */
+  box-sizing: border-box;
+}
+
+/* Make the grid flexible */
+body.gallery .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  transition: all 0.3s ease;
+}
+
+/* Optional: adjust padding for smaller screens */
+@media (max-width: 900px) {
+  body.gallery .gallery-page {
+    padding: 0.5rem;
+  }
+}
+
+/* Full-width header/footer for gallery */
+body.gallery .gallery-header,
+body.gallery .gallery-footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+/* 3 columns on large screens (≥900px) */
+@media (min-width: 900px) {
+  body.gallery .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 1 column on very small screens (<600px) */
+@media (max-width: 600px) {
+  body.gallery .gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gallery figure {
@@ -242,6 +361,12 @@ body {
   height: auto;
   border-radius: 6px;
   object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 .gallery figcaption {
